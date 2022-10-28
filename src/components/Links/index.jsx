@@ -17,6 +17,7 @@ const Links = () => {
           href="http://books.zuri.team"
           id="books"
           className=" text-center  bg-gray-200 rounded-md py-6"
+          title="A place to find great books to aid your software journey"
         >
           Zuri Books
         </a>
@@ -25,7 +26,7 @@ const Links = () => {
           href={`https://books.zuri.team/python-for-beginners?ref_id=seuntheboy`}
           id="book__python"
           className=" text-center  bg-gray-200 rounded-md py-6"
-          title="Python for Beginners"
+          title="A book to get you started with Python"
         >
           Python Books
         </a>
@@ -48,11 +49,14 @@ const Links = () => {
 
         <div className=" flex justify-center py-8 gap-4">
           <a href="">
-            <img src={slackLogo} alt="" />
+            <img src={slackLogo} alt="slack logo with my link attached to it" />
           </a>
 
-          <a href="">
-            <img src={githubLogo} alt="" />
+          <a href="https://github.com/olafisoyevince">
+            <img
+              src={githubLogo}
+              alt="github logo with my link attached to it"
+            />
           </a>
         </div>
       </div>
