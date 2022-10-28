@@ -25,6 +25,7 @@ const Links = () => {
           href={`https://books.zuri.team/python-for-beginners?ref_id=seuntheboy`}
           id="book__python"
           className=" text-center  bg-gray-200 rounded-md py-6"
+          title="Python for Beginners"
         >
           Python Books
         </a>
