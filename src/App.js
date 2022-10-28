@@ -1,11 +1,11 @@
 // import Footer from "./components/Footer";
 // import Links from "./components/Links";
-// import PersonalProfile from "./components/PersonalProfile";
+import PersonalProfile from "./components/PersonalProfile";
 
 function App() {
   return (
-    <div className="">
-      {/* <PersonalProfile /> */}
+    <div className="px-5 md:px-24">
+      <PersonalProfile />
       {/* <Links />
       <Footer /> */}
     </div>
