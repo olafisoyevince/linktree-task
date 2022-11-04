@@ -12,10 +12,6 @@ const ContactMe = () => {
     setChecked(!checked);
   };
 
-  const handleClick = (e) => {
-    // e.preventDefault();
-  };
-
   const handleSubmit = (e) => {
     alert("Form submitted");
   };
@@ -71,11 +67,7 @@ const ContactMe = () => {
               handleChecked={() => handleChecked()}
             />
 
-            <Button
-              checked={checked}
-              title="Send message"
-              handleClick={(e) => handleClick(e)}
-            />
+            <Button checked={checked} title="Send message" />
           </form>
         </div>
       </Layout>
