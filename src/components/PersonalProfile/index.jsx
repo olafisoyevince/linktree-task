@@ -10,7 +10,7 @@ const PersonalProfile = () => {
     winWidth: window.innerWidth,
   });
 
-  console.log(screenWidth);
+  // console.log(screenWidth);
 
   const detectSize = () => {
     setScreenWidth({

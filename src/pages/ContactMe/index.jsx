@@ -20,7 +20,7 @@ const ContactMe = () => {
     alert("Form submitted");
   };
 
-  console.log(checked);
+  // console.log(checked);
 
   return (
     <>
@@ -34,21 +34,23 @@ const ContactMe = () => {
           </div>
 
           <form onSubmit={handleSubmit}>
-            <Input
-              label="First Name"
-              id="first_name"
-              type="text"
-              validate="Please enter your first name"
-              placeholder="Enter your first name"
-            />
+            <div className="md:flex md:gap-6">
+              <Input
+                label="First name"
+                id="first_name"
+                type="text"
+                validate="Please enter your first name"
+                placeholder="Enter your first name"
+              />
 
-            <Input
-              label="Last Name"
-              id="last_name"
-              type="text"
-              validate="Please enter your last name"
-              placeholder="Enter your last name"
-            />
+              <Input
+                label="Last name"
+                id="last_name"
+                type="text"
+                validate="Please enter your last name"
+                placeholder="Enter your last name"
+              />
+            </div>
 
             <Input
               label="Email"
