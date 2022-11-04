@@ -12,7 +12,11 @@ const ContactMe = () => {
   };
 
   const handleClick = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
+  };
+
+  const handleSubmit = (e) => {
+    alert("Form submitted");
   };
 
   console.log(checked);
@@ -27,12 +31,31 @@ const ContactMe = () => {
           </p>
         </div>
 
-        <form>
-          <Input label="First Name" placeholder="Enter your first name" />
+        <form onSubmit={handleSubmit}>
+          <Input
+            label="First Name"
+            id="first_name"
+            type="text"
+            validate="Please enter your first name"
+            placeholder="Enter your first name"
+          />
 
-          <Input label="Last Name" placeholder="Enter your last name" />
+          <Input
+            label="Last Name"
+            id="last_name"
+            type="text"
+            validate="Please enter your last name"
+            placeholder="Enter your last name"
+          />
 
-          <Input label="Email" placeholder="youremail@email.com" />
+          <Input
+            label="Email"
+            id="email"
+            type="email"
+            validate="Please enter a valid email address"
+            placeholder="youremail@email.com"
+            required="required"
+          />
 
           <TextArea
             label="Message"
