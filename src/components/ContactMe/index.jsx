@@ -1,4 +1,8 @@
 import { useState } from "react";
+import Button from "../Button";
+import CheckBox from "../CheckBox";
+import Input from "../InputBox";
+import TextArea from "../TextArea";
 
 const ContactMe = () => {
   const [checked, setChecked] = useState(true);
@@ -6,6 +10,12 @@ const ContactMe = () => {
   const handleChecked = () => {
     setChecked(!checked);
   };
+
+  const handleClick = (e) => {
+    e.preventDefault();
+  };
+
+  console.log(checked);
 
   return (
     <>
@@ -18,67 +28,27 @@ const ContactMe = () => {
         </div>
 
         <form>
-          <div className=" flex flex-col mb-6 gap-1">
-            <label className=" ">First Name</label>
-            <input
-              type="text"
-              placeholder="Enter your first name"
-              id="first_name"
-              className=" h-11 py-2 px-3 border-solid border-2 border-gray-300 rounded-lg focus:border-blue-300 focus:outline-none "
-            />
-          </div>
+          <Input label="First Name" placeholder="Enter your first name" />
 
-          <div className=" flex flex-col mb-6 gap-1">
-            <label className=" ">Last Name</label>
-            <input
-              type="text"
-              placeholder="Enter your last name"
-              id="last_name"
-              className=" h-11 py-2 px-3 border-2 border-gray-300 rounded-lg focus:border-blue-300 focus:outline-none"
-            />
-          </div>
+          <Input label="Last Name" placeholder="Enter your last name" />
 
-          <div className=" flex flex-col mb-6 gap-1">
-            <label className=" ">Email</label>
-            <input
-              type="email"
-              placeholder="youremail@email.com"
-              id="email"
-              className=" h-11 py-2 px-3 border-2 border-gray-300 rounded-lg focus:border-blue-300 focus:outline-none"
-            />
-          </div>
+          <Input label="Email" placeholder="youremail@email.com" />
 
-          <div className=" flex flex-col mb-6 gap-1">
-            <label className=" ">Message</label>
-            <textarea
-              type="text"
-              placeholder="Send me a message and I'll reply you as soon as possible"
-              id="message"
-              className=" h-32 py-2 px-3 border-2 border-gray-300 rounded-lg focus:border-blue-300 focus:outline-none"
-            />
-          </div>
+          <TextArea
+            label="Message"
+            placeholder="Send me a message and I'll reply you as soon as possible"
+          />
 
-          <div className=" flex items-start">
-            <input
-              type="checkbox"
-              className="bg-gray-50 border-2 border-gray-300 focus:ring-3 focus:ring-blue-300 h-7 w-7 rounded-md active:border-2 active:border-blue-200"
-              onChange={() => handleChecked()}
-            />
-            <p className=" ml-3 text-gray-600 ">
-              You agree to providing your data to Seun who may contact you.
-            </p>
-          </div>
+          <CheckBox
+            label="You agree to providing your data to Seun who may contact you."
+            handleChecked={() => handleChecked()}
+          />
 
-          <button
-            id="btn__submit"
-            className="w-full rounded-lg text-white mt-8 mb-16 bg-blue-700 py-3 px-5 disabled:border-solid disabled:bg-blue-200  active:bg-blue-600 active:border-blue-200 active:ring"
-            disabled={checked}
-            onClick={(e) => {
-              e.preventDefault();
-            }}
-          >
-            Send Message
-          </button>
+          <Button
+            checked={checked}
+            title="Send message"
+            handleClick={(e) => handleClick(e)}
+          />
         </form>
       </div>
     </>
