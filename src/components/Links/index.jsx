@@ -1,5 +1,6 @@
 import slackLogo from "../../assets/slack.png";
 import githubLogo from "../../assets/Icon.png";
+import { Link } from "react-router-dom";
 
 const Links = () => {
   return (
@@ -46,6 +47,14 @@ const Links = () => {
         >
           Design Books
         </a>
+
+        <Link
+          to={`/contact`}
+          id="book__design"
+          className=" text-center  bg-gray-200 rounded-md py-6"
+        >
+          Contact
+        </Link>
 
         <div className=" flex justify-center py-8 gap-4">
           <a href="">

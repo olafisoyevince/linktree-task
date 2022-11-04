@@ -2,11 +2,29 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import Home from "./pages/Home";
+
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import ContactMe from "./pages/ContactMe";
+import Footer from "./components/Footer";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+
+  {
+    path: "/contact",
+    element: <ContactMe />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
+    <Footer />
   </React.StrictMode>
 );
 
