@@ -2,14 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import Home from "./pages/Home";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createHashRouter,
+} from "react-router-dom";
 import ContactMe from "./pages/ContactMe";
 import Footer from "./components/Footer";
 import ErrorPage from "./components/ErrorPage";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: "/home",
+    path: "/",
     element: <Home />,
     errorElement: <ErrorPage />,
   },
