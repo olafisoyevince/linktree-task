@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/linktree-task/static/css/main.5636b221.css",
-    "main.js": "/linktree-task/static/js/main.646d694d.js",
+    "main.css": "/linktree-task/static/css/main.918194dc.css",
+    "main.js": "/linktree-task/static/js/main.41e79009.js",
     "static/media/profile__img.png": "/linktree-task/static/media/profile__img.5ff40e1b5d2b90077f44.png",
     "index.html": "/linktree-task/index.html",
-    "main.5636b221.css.map": "/linktree-task/static/css/main.5636b221.css.map",
-    "main.646d694d.js.map": "/linktree-task/static/js/main.646d694d.js.map"
+    "main.918194dc.css.map": "/linktree-task/static/css/main.918194dc.css.map",
+    "main.41e79009.js.map": "/linktree-task/static/js/main.41e79009.js.map"
   },
   "entrypoints": [
-    "static/css/main.5636b221.css",
-    "static/js/main.646d694d.js"
+    "static/css/main.918194dc.css",
+    "static/js/main.41e79009.js"
   ]
 }
