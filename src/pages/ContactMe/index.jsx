@@ -4,6 +4,7 @@ import CheckBox from "../../components/CheckBox";
 import Input from "../../components/InputBox";
 import TextArea from "../../components/TextArea";
 import Layout from "../../components/Layout";
+import { Form } from "antd";
 
 const ContactMe = () => {
   const [checked, setChecked] = useState(true);
@@ -29,7 +30,7 @@ const ContactMe = () => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit}>
+          <Form onSubmit={handleSubmit}>
             <div className="md:flex md:gap-6">
               <Input
                 label="First name"
@@ -68,7 +69,7 @@ const ContactMe = () => {
             />
 
             <Button checked={checked} title="Send message" />
-          </form>
+          </Form>
         </div>
       </Layout>
     </>

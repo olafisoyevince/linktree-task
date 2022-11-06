@@ -8,6 +8,14 @@
   @apply text-opacity-100;
 }
 
+input:not(:placeholder-shown):invalid {
+  @apply invalid:border-red-500 invalid:text-red-600 focus:invalid:border-red-500 focus:invalid:ring-red-300;
+}
+
+p:not(:placeholder-shown):invalid {
+  @apply peer-invalid:block text-red-600;
+}
+
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
