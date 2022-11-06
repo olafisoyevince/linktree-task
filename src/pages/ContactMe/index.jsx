@@ -30,7 +30,7 @@ const ContactMe = () => {
             </p>
           </div>
 
-          <Form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <div className="md:flex md:gap-6">
               <Input
                 label="First name"
@@ -69,7 +69,7 @@ const ContactMe = () => {
             />
 
             <Button checked={checked} title="Send message" />
-          </Form>
+          </form>
         </div>
       </Layout>
     </>

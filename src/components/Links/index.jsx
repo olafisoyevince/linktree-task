@@ -50,7 +50,7 @@ const Links = () => {
 
         <Link
           to={`/contact`}
-          id="book__design"
+          id="contact"
           className=" text-center  bg-gray-200 rounded-md py-6"
         >
           Contact
